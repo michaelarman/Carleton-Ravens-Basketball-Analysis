@@ -1,0 +1,26 @@
+,rules,support,confidence,lift,count
+1,"{Isolation...Single.Covered=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+2,"{Isolation...Single.Covered=3,Isolation...Defense.Commits=2} => {Win=0}",0.133333333,1,5,2
+3,"{Isolation...Single.Covered=3,Cuts=2} => {Win=0}",0.133333333,1,5,2
+4,"{Post.Up...Single.Covered=2,Isolation...Single.Covered=3} => {Win=0}",0.133333333,1,5,2
+5,"{Isolation...Single.Covered=3,Miscellaneous.Possessions=2} => {Win=0}",0.133333333,1,5,2
+6,"{P.R.Ball.Handler...Traps=2,P.R.Ball.Handler...Defense.Commits=3} => {Win=0}",0.133333333,1,5,2
+7,"{P.R.Ball.Handler...Traps=2,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+8,"{P.R.Ball.Handler...Defense.Commits=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+9,"{All.P.R.Ball.Handler=4,Isolation...Single.Covered=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+10,"{All.P.R.Ball.Handler=4,Isolation...Single.Covered=3,Isolation...Defense.Commits=2} => {Win=0}",0.133333333,1,5,2
+11,"{All.P.R.Ball.Handler=4,Isolation...Single.Covered=3,Cuts=2} => {Win=0}",0.133333333,1,5,2
+12,"{Post.Up...Single.Covered=2,All.P.R.Ball.Handler=4,Isolation...Single.Covered=3} => {Win=0}",0.133333333,1,5,2
+13,"{All.P.R.Ball.Handler=4,Isolation...Single.Covered=3,Miscellaneous.Possessions=2} => {Win=0}",0.133333333,1,5,2
+14,"{All.Post.Up=2,Isolation...Single.Covered=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+15,"{Isolation...Single.Covered=3,Isolation...Defense.Commits=2,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+16,"{Isolation...Single.Covered=3,Off.Screens=1,Cuts=2} => {Win=0}",0.133333333,1,5,2
+17,"{Post.Up...Single.Covered=2,Isolation...Single.Covered=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+18,"{Isolation...Single.Covered=3,Off.Screens=1,Miscellaneous.Possessions=2} => {Win=0}",0.133333333,1,5,2
+19,"{P.R.Roll.Man=1,Isolation...Single.Covered=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+20,"{Post.Up...Hard.Double.Team=1,Isolation...Single.Covered=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+21,"{Post.Up...Defense.Commits=1,Isolation...Single.Covered=3,Off.Screens=1} => {Win=0}",0.133333333,1,5,2
+22,"{All.Post.Up=2,Isolation...Single.Covered=3,Isolation...Defense.Commits=2} => {Win=0}",0.133333333,1,5,2
+23,"{All.Post.Up=2,Isolation...Single.Covered=3,Cuts=2} => {Win=0}",0.133333333,1,5,2
+24,"{All.Post.Up=2,Post.Up...Single.Covered=2,Isolation...Single.Covered=3} => {Win=0}",0.133333333,1,5,2
+25,"{All.Post.Up=2,Isolation...Single.Covered=3,Miscellaneous.Possessions=2} => {Win=0}",0.133333333,1,5,2
