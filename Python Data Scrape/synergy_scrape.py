@@ -5,17 +5,19 @@ import time
 import os
 import sys
 
-
+"""Since Synergy uses a lot of javascript, a normal html scraper like beautifulsoup would not do the trick so we'd have to
+use selenium and a webdriver to interact with the javascript and finally we can use beautifulsoup to interact with the innerhtml"""
 browser = webdriver.Chrome(os.path.join(sys.path[0], 'chromedriver'))
 
 def login():
+    
     login_url = 'https://www.synergysportstech.com/Synergy/Default.aspx'
     browser.get(login_url)
     username1 = browser.find_element_by_css_selector('#txtUserName')
-    username = "MichaelArmanious@cmail.carleton.ca"
+    username = "************"
     username1.send_keys(username)
     password1 = browser.find_element_by_css_selector('#txtPassword')
-    password = "Carleton2018ma"
+    password = "************"
     password1.send_keys(password)
 
     browser.find_element_by_css_selector('#btnLogin').click()
