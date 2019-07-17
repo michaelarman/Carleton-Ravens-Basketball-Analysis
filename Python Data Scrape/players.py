@@ -7,6 +7,7 @@ import re
 import itertools
 
 def get_links():
+    """This is a function to get the links for every game from season 2014-15 to 2018-19"""
     print("getting links...")
     teams = ['algoma', 'brock', 'carleton', 'guelph', 'lakehead', 'laurentian',
              'laurier', 'mcmaster', 'nipissing', 'ottawa', 'queens', 'ryerson',
@@ -45,6 +46,8 @@ def get_links():
     return href_list
 
 def vsplayers_scrape(url):
+    """It was best to make separate functions for each player because some sites had the players in different tables so this is 
+    intended to scrape all the starting visitor players"""
     vslist = {}
     homelist = {}
     for j in range(len(url)):
@@ -102,6 +105,7 @@ def vsplayers_scrape(url):
     return vslist
 
 def vrplayers_scrape(url):
+    """This would scrape all the visitor reserve players"""
     vrlist = {}
     homelist = {}
     for j in range(len(url)):
@@ -163,6 +167,7 @@ def vrplayers_scrape(url):
 
 
 def hsplayers_scrape(url):
+    """scrapes all the home starting players"""
     rlist = {}
     slist = {}
     for j in range(len(url)):
@@ -223,6 +228,7 @@ def hsplayers_scrape(url):
 
 
 def hrplayers_scrape(url):
+    """scrapes all the home reserves players"""
     rlist = {}
     slist = {}
     for j in range(len(url)):
@@ -272,39 +278,7 @@ def hrplayers_scrape(url):
                     hometeam[0].find_all('th')[13].text.strip(): reservestr[i + 1].find_all('td')[12].text.strip(),
                 }
     return rlist
-        # b = pd.DataFrame(rlist)
-        # df2 = pd.DataFrame(a)
-        # df2 = df2.T
-        # df2 = df2.replace('\-', ' -- ', regex=True).astype(object)
-        # df2 = df2.replace('\\n', '', regex=True).astype(object)
 
-
-
-
-
-
-
-
-
-# for i in range((len(visitortbody[1].find_all('th')))-2):
-#     print(visitortr[i+1].find_all('td')[1].text.strip())
-#
-# dictlist = {}
-#
-# for j in range(len(visitorteam[0].find_all('th', {'class' : 'col-head'}))) and i in range((len(visitortbody[1].find_all('th'))) - 2):
-#     for i in range((len(visitortbody[1].find_all('th'))) - 2):
-#         dictlist[i] = {
-#         'Away': visitorteam[0].caption.text.strip(),
-#         visitorteam[0].find_all('th')[j].text.strip(): visitortr[1].find_all('td')[i].text.strip()
-#         }
-#
-# A = (range((len(visitortbody[1].find_all('th'))) - 2),range(len(visitorteam[0].find_all('th', {'class': 'col-head'}))))
-#
-# for j,i in itertools.product(*A):
-#     dictlist[i,j] = {
-#     'Away': visitorteam[0].caption.text.strip(),
-#     visitorteam[0].find_all('th')[j].text.strip(): visitortr[1].find_all('td')[i].text.strip()
-#     }
 
 url = 'http://www.oua.ca/sports/mbkb/2014-15/boxscores/20141109_qc5c.xml?view=boxscore'
 
